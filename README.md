@@ -1,4 +1,4 @@
-### tntbot
+# tntbot
 
 ## how should this bot work?
 
@@ -10,24 +10,24 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [x] create the folder structure
 - [x] create first bot file
 
-# BOT Todo-List
+### BOT Todo-List
 - [x] active listener
 - [x] regex for urls
 - [ ] set up a database migrate/rollback/seed/reset
 
-# BOT reactions
+### BOT reactions
 - [x] new "you just posted a link!"
 - [ ] add to list
 - [ ] already posted
 - [ ] notify "you already posted that link"
 
-# LIST/ARCHIVE Todo-List
+### LIST/ARCHIVE Todo-List
 - [ ] user_id
 - [ ] post_id
 - [ ] url_id
 - [ ] channel
 - [ ] posted date
 
-# Extenstions:
+## Extenstions:
 - [ ] show entry options edit/update/delete - if yes, for who? every user?
 - [ ] user = related to mail?username?user_id? - what if someone changes mailadress?
