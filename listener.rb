@@ -16,7 +16,7 @@ end
 client.on :message do |data|
   case data.text
   when 'bot hi' then
-    client.message channel: data.channel, text: "Hi <@#{data.user}>!"
+    client.message channel: data.channel, text: "Hi <@#{data.user}> from tnt!"
   when /bot/ then
     client.message channel: data.channel, text: "Sorry <@#{data.user}>, what?"
   when /https?:\/\/[\S]+/ then
