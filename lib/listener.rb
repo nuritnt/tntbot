@@ -1,7 +1,6 @@
 require 'slack-ruby-client'
 require 'eventmachine'
 require 'faye/websocket'
-require 'uri'
 
 Slack.configure do |config|
   config.token = ENV['SLACK_API_TOKEN']

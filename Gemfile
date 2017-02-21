@@ -11,7 +11,6 @@ gem 'celluloid-io'
 gem 'eventmachine'
 gem 'faye'
 gem 'sinatra'
-gem 'uri'
 gem 'activerecord'
 
 # develop
