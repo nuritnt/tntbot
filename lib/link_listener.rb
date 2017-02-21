@@ -9,13 +9,7 @@ end
 
 class Url < SlackRubyBot::Bot
   match /(?<link>https?:\/\/(?:www\.|(?!www))[^\s\.]{4,}+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})/ do |client, data, match|
-    client.say(channel: data.channel, text: "yay, you just posted a evilish link: #{match[:link]} - congrats!")
-  end
-end
-
-class Weather < SlackRubyBot::Bot
-  match /^How is the weather in (?<location>\w*)\?$/ do |client, data, match|
-    client.say(channel: data.channel, text: "The weather in #{match[:location]} is nice.")
+    client.say(channel: data.channel, text: "yay, you just posted a evilish link: #{match[:link]} - congrats!", gif: 'notbad')
   end
 end
 
@@ -23,4 +17,3 @@ SlackRubyBot::Client.logger.level = Logger::WARN
 
 Bot.run
 Url.run
-Weather.run
