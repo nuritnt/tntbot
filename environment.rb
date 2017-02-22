@@ -1,7 +1,7 @@
 require 'active_record'
 
 # recursviely requires all files in ./lib and down that end in .rb
-Dir.glob('./lib/*.rb').each do |file|
+Dir.glob('./models/*.rb').each do |file|
   require file
 end
 
