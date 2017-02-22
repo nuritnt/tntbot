@@ -15,16 +15,7 @@ namespace :db do
   end
 
   task :reset do
-    CreateLinksTabe.migrate(:down)
+    CreateLinksTable.migrate(:down)
     CreateLinksTable.migrate(:up)
   end
-
-  # task :seed do
-  #     Link.find_or_create_by(
-  #       link_id:,
-  #       user_id:,
-  #       post_id:,
-  #     )
-  #   end
-  # end
 end
