@@ -1,9 +1,4 @@
 require_relative './environment.rb'
-require 'pry'
-
-task :console do
-  binding.pry
-end
 
 namespace :db do
   task :create do
