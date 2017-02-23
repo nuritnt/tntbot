@@ -12,5 +12,5 @@ end
 # tells AR what db file to use
 ActiveRecord::Base.establish_connection(
   :adapter => 'postgresql',
-  :database => 'tntbot_production'
+  :database => ENV['DATABASE_URL']
 )
