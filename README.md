@@ -10,24 +10,28 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [x] create the folder structure
 - [x] create first bot file
 
-### BOT Todo-List
+### Todo-List
 - [x] active listener
 - [x] regex for urls
-- [ ] set up a database migrate/rollback/seed/reset
+- [x] rakefile: create/migrate/rollback/reset
+- [ ] find or create by method
+- [ ] fix [message loop protection](https://github.com/slack-ruby/slack-ruby-bot#message-loop-protection)
+- [ ] database GUI
 
-### BOT reactions
-- [x] new "you just posted a link!"
+
+### BOT find or create by reactions
+- [x] new = "you just posted a link!"
 - [ ] add to list
 - [ ] already posted
 - [ ] notify "you already posted that link"
 
-### LIST/ARCHIVE Todo-List
-- [ ] user_id
-- [ ] post_id
-- [ ] url_id
-- [ ] channel
-- [ ] posted date
+### Database table
+- [x] url_id
+- [x] channel
+- [x] user_id
+- [x] posted date
 
 ## Extenstions:
 - [ ] show entry options edit/update/delete - if yes, for who? every user?
 - [ ] user = related to mail?username?user_id? - what if someone changes mailadress?
+- [ ] [implement your own hooks](https://github.com/slack-ruby/slack-ruby-bot#hooks)
