@@ -11,6 +11,6 @@ end
 
 # tells AR what db file to use
 ActiveRecord::Base.establish_connection(
-  :adapter => 'sqlite3',
-  :database => 'db/tntbot.db'
+  :adapter => 'postgresql',
+  :database => 'tntbot_production'
 )

@@ -6,15 +6,16 @@ gem 'slack-ruby-client'
 
 # third party gems
 gem 'giphy'
-gem 'sqlite3'
+gem 'pg'
 gem 'celluloid-io'
 gem 'eventmachine'
 gem 'faye'
 gem 'sinatra'
 gem 'activerecord'
-
-# develop
 gem 'rake'
 gem 'foreman'
-gem 'pry'
 gem 'curb'
+
+group :development do
+  gem 'pry'
+end
