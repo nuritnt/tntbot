@@ -3,7 +3,7 @@ require_relative './environment.rb'
 namespace :db do
   task :create do
     conn = PG.connect(dbname: 'postgres')
-    conn.exec("CREATE DATABASE tntbot_production")
+    conn.exec("CREATE DATABASE tntbot_development")
   end
 
   task :migrate do
