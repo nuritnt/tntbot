@@ -35,3 +35,4 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [ ] show entry options edit/update/delete - if yes, for who? every user?
 - [ ] user = related to mail?username?user_id? - what if someone changes mailadress?
 - [ ] [implement your own hooks](https://github.com/slack-ruby/slack-ruby-bot#hooks)
+- [ ] possibility to archive all messages in free accountss
