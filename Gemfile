@@ -13,7 +13,6 @@ gem 'faye'
 gem 'sinatra'
 gem 'activerecord'
 gem 'rake'
-gem 'foreman'
 gem 'curb'
 
 group :development do
