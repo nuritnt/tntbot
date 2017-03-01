@@ -14,6 +14,7 @@ gem 'sinatra'
 gem 'activerecord'
 gem 'rake'
 gem 'curb'
+gem 'nokogiri'
 
 group :development do
   gem 'pry'
