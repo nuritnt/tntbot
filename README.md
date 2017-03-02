@@ -14,16 +14,19 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [x] active listener
 - [x] regex for urls
 - [x] rakefile: create/migrate/rollback/reset
-- [ ] find or create by method
-- [ ] fix [message loop protection](https://github.com/slack-ruby/slack-ruby-bot#message-loop-protection)
+- [x] find or initialize by method
+- [ ] fix user_id
+- [ ] fix channel_id
 - [ ] database GUI
+- [ ] add rails
+- [ ] fix [message loop protection](https://github.com/slack-ruby/slack-ruby-bot#message-loop-protection)
 
 
 ### BOT find or create by reactions
 - [x] new = "you just posted a link!"
-- [ ] add to list
-- [ ] already posted
-- [ ] notify "you already posted that link"
+- [x] add to list
+- [x] already posted
+- [x] notify "you already posted that link"
 
 ### Database table
 - [x] url_id
