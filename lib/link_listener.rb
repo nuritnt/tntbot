@@ -12,7 +12,7 @@ class Bot < SlackRubyBot::Bot
   end
 
   match(/(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/ix) do |client, data, match|
-    url = match.to_s
+    url = match.to_s.gsub(">", '')
     link = Link.find_or_initialize_by(url: url)
     title = Nokogiri::HTML(open(url)).css('title').text
     if link.new_record?
