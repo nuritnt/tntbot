@@ -1,1 +1,1 @@
-web: bundle exec ruby lib/link_listener.rb
+worker: bundle exec ruby lib/link_listener.rb
