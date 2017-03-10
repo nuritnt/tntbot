@@ -9,7 +9,7 @@ require 'open-uri'
 class Bot < SlackRubyBot::Bot
   command 'ping' do |client, data, _match|
     binding.pry
-    client.say(text: "hi <@#{data.user}>, you got pong'd from tnt's device mofo in channel <@#{data.channel}>", channel: data.channel)
+    client.say(text: "hi <@#{data.user}>, you got pong'd from tnt's device,", channel: data.channel)
   end
 
   match(/(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/ix) do |client, data, match|
