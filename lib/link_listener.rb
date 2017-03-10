@@ -3,7 +3,7 @@ require 'slack-ruby-bot'
 require 'curb'
 require 'uri'
 require 'nokogiri'
-require 'open-uri'
+require 'open_uri_redirections'
 
 class Bot < SlackRubyBot::Bot
   command 'ping' do |client, data, _match|
@@ -13,7 +13,7 @@ class Bot < SlackRubyBot::Bot
   match(/(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/ix) do |client, data, match|
     url = match.to_s.gsub(">", '')
     link = Link.find_or_initialize_by(url: url)
-    title = Nokogiri::HTML(open(url)).css('title').text
+    title = Nokogiri::HTML(open(url, allow_redirections: :all)).css('title').text
     if link.new_record?
       link.update_attributes(
         title: title,

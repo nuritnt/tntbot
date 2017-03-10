@@ -14,6 +14,7 @@ gem 'activerecord'
 gem 'rake'
 gem 'curb'
 gem 'nokogiri'
+gem 'open_uri_redirections'
 
 group :development do
   gem 'pry'
