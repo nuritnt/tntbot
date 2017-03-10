@@ -2,13 +2,11 @@ require_relative "../environment.rb"
 require 'slack-ruby-bot'
 require 'curb'
 require 'uri'
-require 'pry'
 require 'nokogiri'
 require 'open-uri'
 
 class Bot < SlackRubyBot::Bot
   command 'ping' do |client, data, _match|
-    binding.pry
     client.say(text: "hi <@#{data.user}>, you got pong'd from tnt's device,", channel: data.channel)
   end
 
