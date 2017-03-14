@@ -6,24 +6,6 @@ require 'nokogiri'
 require 'open_uri_redirections'
 
 class Bot < SlackRubyBot::Bot
-  help do
-   title 'TNTs BOT'
-   desc 'This bot collects all your shared links.'
-
-   command 'ping' do
-     desc 'Bot says pong.'
-   end
-
-   command 'show list' do
-     desc 'Shows your collection of links.'
-     long_desc "You can have a look on the link collection here: https://tntbot-list.herokuapp.com/'
-     end
-   end
-
-   command 'ping' do |client, data, _match|
-     client.say(text: "pong", channel: data.channel)
-   end
-
   command 'ping' do |client, data, _match|
     client.say(text: "hi <@#{data.user}>, you got pong'd from tnt's device,", channel: data.channel)
   end
