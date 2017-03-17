@@ -6,7 +6,7 @@ require 'nokogiri'
 require 'open_uri_redirections'
 
 class Bot < SlackRubyBot::Bot
-  command 'show list' do |client, data, _match|
+  command 'show list', 'show links' do |client, data, _match|
     client.say(text: "hi <@#{data.user}>, you can have a look on the list here: https://tntbot-list.herokuapp.com/ ", channel: data.channel)
   end
 
