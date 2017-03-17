@@ -15,11 +15,11 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [x] regex for urls
 - [x] rakefile: create/migrate/rollback/reset
 - [x] find or initialize by method
+- [x] database GUI
+- [x] add rails
+- [x] fix [message loop protection](https://github.com/slack-ruby/slack-ruby-bot#message-loop-protection)
 - [ ] fix user_id
 - [ ] fix channel_id
-- [ ] database GUI
-- [ ] add rails
-- [ ] fix [message loop protection](https://github.com/slack-ruby/slack-ruby-bot#message-loop-protection)
 
 
 ### BOT find or create by reactions
@@ -38,4 +38,4 @@ If a posted link is [new], it should be added to a [list]. If it has been [alrea
 - [ ] show entry options edit/update/delete - if yes, for who? every user?
 - [ ] user = related to mail?username?user_id? - what if someone changes mailadress?
 - [ ] [implement your own hooks](https://github.com/slack-ruby/slack-ruby-bot#hooks)
-- [ ] possibility to archive all messages in free accountss
+- [ ] possibility to archive all messages in free accounts
