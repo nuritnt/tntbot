@@ -41,7 +41,7 @@ class Bot < SlackRubyBot::Bot
         user_id: data.user
       )
       link.save
-      client.say(channel: data.channel, text: "successfully saved to database. #{client.self.name} #{client.team.name} https://#{client.team.domain}.slack.com")
+      client.say(channel: data.channel, text: "successfully saved to database.#{client.inspect} #{client.self.name} #{client.team.name} https://#{client.team.domain}.slack.com")
     else
       link.touch
       client.say(channel: data.channel, text: "already in my database.")
