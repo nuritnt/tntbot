@@ -2,8 +2,9 @@
 
 ## how should this bot work?
 
-This is a Slack bot which is built a boilerplate from [slack-ruby-bot] (https://github.com/slack-ruby/slack-ruby-bot). The tasks of this bot is to listen to all conversations, and [react] if a link is posted by a user.
-If a posted link is [new], it should be added to a [list]. If it has been [already posted], the bot should [notify] that this link was already mentioned.  
+This is a Slack bot which is built with [slack-ruby-bot](https://github.com/slack-ruby/slack-ruby-bot).
+The tasks of this bot is to listen to all conversations, and [react] if a link is posted by a user.
+If a posted link is [new], it should be added to a [list]. If it has been [already posted], the bot should [notify] that this link was already mentioned. There is also an GUI for the Database: [here](https://github.com/nuritnt/tntbot-frontend)
 
 ## getting started with a Bot
 - [x] [create a new bot user in slack](https://github.com/slack-ruby/slack-ruby-bot/blob/master/TUTORIAL.md#create-a-bot-user)
