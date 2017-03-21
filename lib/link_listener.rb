@@ -1,9 +1,19 @@
 require_relative "../environment.rb"
+require 'slack-ruby-client'
 require 'slack-ruby-bot'
 require 'curb'
-require 'uri'
 require 'nokogiri'
 require 'open_uri_redirections'
+
+require 'eventmachine'
+require 'faye/websocket'
+
+Slack.configure do |config|
+  config.token = ENV['SLACK_API_TOKEN']
+end
+
+client = Slack::RealTime::Client.new
+client.start!
 
 class Bot < SlackRubyBot::Bot
   help do
@@ -38,7 +48,7 @@ class Bot < SlackRubyBot::Bot
         user_id: data.user
       )
       link.save
-      client.say(channel: data.channel, text: "successfully saved to database.")
+      client.say(channel: data.channel, text: "successfully saved to database. #{client.self.name} #{client.team.name} https://#{client.team.domain}.slack.com")
     else
       link.touch
       client.say(channel: data.channel, text: "already in my database.")
@@ -48,5 +58,4 @@ end
 
 
 SlackRubyBot::Client.logger.level = Logger::WARN
-
 Bot.run
