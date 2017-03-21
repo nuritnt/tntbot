@@ -1,11 +1,9 @@
 require_relative "../environment.rb"
-require 'slack-ruby-client'
 require 'slack-ruby-bot'
 require 'curb'
 require 'nokogiri'
 require 'open_uri_redirections'
 
-require 'eventmachine'
 class Bot < SlackRubyBot::Bot
   help do
     title "TNT's BOT"
@@ -39,7 +37,7 @@ class Bot < SlackRubyBot::Bot
         user_id: data.user
       )
       link.save
-      client.say(channel: data.channel, text: "successfully saved to database. s#{client.channel.name}")
+      client.say(channel: data.channel, text: "successfully saved to database.")
     else
       link.touch
       client.say(channel: data.channel, text: "already in my database.")
