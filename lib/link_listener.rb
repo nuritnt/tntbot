@@ -8,13 +8,6 @@ require 'open_uri_redirections'
 require 'eventmachine'
 require 'faye/websocket'
 
-Slack.configure do |config|
-  config.token = ENV['SLACK_API_TOKEN']
-end
-
-client = Slack::RealTime::Client.new
-client.start!
-
 class Bot < SlackRubyBot::Bot
   help do
     title "TNT's BOT"
