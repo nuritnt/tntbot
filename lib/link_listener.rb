@@ -16,8 +16,8 @@ class Bot < SlackRubyBot::Bot
     command 'show links' do
       desc 'The bot will return the link collection.'
     end
-
   end
+
   command 'show list', 'show links' do |client, data, _match|
     client.say(text: "hi <@#{data.user}>, you can have a look on the list here: https://tntbot-list.herokuapp.com/ ", channel: data.channel)
   end
@@ -44,7 +44,6 @@ class Bot < SlackRubyBot::Bot
     end
   end
 end
-
 
 SlackRubyBot::Client.logger.level = Logger::WARN
 Bot.run
