@@ -1,6 +1,6 @@
 require_relative '../../environment'
 
-class CreateLinksTable < ActiveRecord::Migration
+class CreateLinksTable < ActiveRecord::Migration[4.2]
     def up
       create_table :links do |t|
         t.string :title
