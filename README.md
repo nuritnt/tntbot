@@ -1,6 +1,6 @@
 # tntbot
 
-## This project was build as the final project during the fulltime master12 academy bootcamp in 2017. It is no longer maintained, nor hosted on heruko. Head over to the [tntbot-frontend repo](https://github.com/nuritnt/tntbot-frontend) if you want to know how the collection looked.
+## This project was build as the final project during the fulltime master12 academy bootcamp in 2017. It is no longer maintained, nor hosted on Heroku. Head over to the [tntbot-frontend repo](https://github.com/nuritnt/tntbot-frontend) if you want to know how the collection looked.
 
 ## how should this bot work?
 
